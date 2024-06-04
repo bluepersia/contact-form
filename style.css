@@ -40,10 +40,14 @@ body {
     font-size: 2rem;
 }
 
-.cmp__input, .cmp__query-radio-label, .cmp__textarea
+.cmp__input, .cmp__query-radio-label, .cmp__textarea, #cmp__submit-btn
 {
     font-size: 1.125rem;
 }
 
 
+#cmp__submit-btn 
+{
+    color: var(--c-White);
+}
 
