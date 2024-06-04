@@ -12,14 +12,38 @@ body {
     margin: 0;
 }
 
-* {
+#cmp * {
     box-sizing: border-box;
 }
 
-*:first-child {
+#cmp *:first-child {
     margin-top: 0;
 }
 
-*:last-child {
+#cmp **:last-child {
     margin-bottom: 0;
 }
+
+#cmp {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Karla", sans-serif;
+    color:var(--c-Grey-900);
+}
+
+#cmp p 
+{
+    line-height: 1.6;
+}
+
+#cmp__title {
+    font-size: 2rem;
+}
+
+.cmp__input, .cmp__query-radio-label, .cmp__textarea
+{
+    font-size: 1.125rem;
+}
+
+
+
