@@ -55,6 +55,10 @@ body {
     color: var(--c-White);
 }
 
+.cmp__textarea {
+    font-family: inherit;
+}
+
 
 
 
@@ -130,7 +134,7 @@ body {
     padding: 1.5em;
 }
 #cmp__form {
-    gap: 2.25em;
+    gap: 1.5em;
 }
 .cmp__input-container.invalid {
     padding-bottom: 2em;
@@ -148,11 +152,60 @@ body {
     padding: .865em 1.5em;
 }
 
+.cmp__query-radio {
+    margin-right: .75em;
+}
+
 #cmp__query-radio-container {
      gap:1em;
 }
 
 #cmp__submit-btn 
 {
-    padding: 1em;
+    padding: .88em;
+}
+
+
+
+@media (min-width:  768px)
+{
+    #cmp__form {
+        display: grid;
+        grid-template-columns: 48.7% 48.7%;
+        column-gap: 2.6%;
+    }
+
+    #cmp__email-container, #cmp__query-container, #cmp__message-container, #cmp__consent-label, #cmp__submit-btn
+    {
+        grid-column: 1 / -1;
+    }
+
+    #cmp__query-radio-container {
+        display: grid;
+        grid-template-columns: 48.7% 48.7%;
+    }
+
+
+    /*Padding*/
+    body {
+        padding: 8em 5.2%;
+    }
+    
+    #cmp {
+        padding: 2.5em;
+    }
+   
+
+    .cmp__query-radio {
+        margin-right: .75em;
+    }
+    
+ 
+    
+}
+
+
+@media (min-width: 1440px)
+{
+    
 }

@@ -40,8 +40,8 @@
       <div id="cmp__query-container" class="cmp__input-container">
         <h4 id="cmp__query-title" class="cmp__label">Query Type <span class="star">*</span></h4>
         <div id="cmp__query-radio-container">
-          <label class="cmp__query-radio-label"><input type="radio" name="query" value="General Enquiry"/>General Enquiry</label>
-          <label class="cmp__query-radio-label"><input type="radio" name="query" value="Support Request"/>Support Request</label>
+          <label class="cmp__query-radio-label"><input type="radio" class="cmp__query-radio" name="query" value="General Enquiry"/>General Enquiry</label>
+          <label class="cmp__query-radio-label"><input type="radio" class="cmp__query-radio" name="query" value="Support Request"/>Support Request</label>
         </div>
         <p class="cmp__input-error">Please select a query type</p>
       </div>
@@ -50,7 +50,7 @@
         <textarea id="cmp__message" class="cmp__textarea"></textarea>
         <p class="cmp__input-error">This field is required</p>
       </div>
-      <label class="cmp__label"><input type="checkbox" id="cmp__consent" class="cmp__checkbox"/>I consent to being contacted by the team<span class="star">*</span></label>
+      <label class="cmp__label" id="cmp__consent-label"><input type="checkbox" id="cmp__consent" class="cmp__checkbox"/>I consent to being contacted by the team<span class="star">*</span></label>
 
       <button type="submit" id="cmp__submit-btn">Submit</button>
     </form>
