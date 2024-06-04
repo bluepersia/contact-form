@@ -24,17 +24,17 @@
     <form id="cmp__form">
       <div id="cmp__first-container" class="cmp__input-container">
         <label for="cmp__first-name" class="cmp__label">First Name <span class="star">*</span></label>
-        <input type="text" id="cmp__first-name" class="cmp__input"/>
+        <input type="text" id="cmp__first-name" class="cmp__input" data-required="true"/>
         <p class="cmp__input-error">Field is required</p>
       </div>
       <div id="cmp__last-container" class="cmp__input-container">
         <label for="cmp__last-name" class="cmp__label">Last Name <span class="star">*</span></label>
-        <input type="text" id="cmp__first-name" class="cmp__input"/>
+        <input type="text" id="cmp__last-name" class="cmp__input" data-required="true"/>
         <p class="cmp__input-error">Field is required</p>
       </div>
       <div id="cmp__email-container" class="cmp__input-container">
         <label for="cmp__email" class="cmp__label">Email Address <span class="star">*</span></label>
-        <input type="text" id="cmp__first-name" class="cmp__input"/>
+        <input type="text" id="cmp__email" class="cmp__input" data-isemail="true"/>
         <p class="cmp__input-error">Field is required</p>
       </div>
       <div id="cmp__query-container" class="cmp__input-container">
@@ -47,13 +47,18 @@
       </div>
       <div id="cmp__message-container" class="cmp__input-container">
         <label for="cmp__message" class="cmp__label">Message <span class="star">*</span></label>
-        <textarea id="cmp__message" class="cmp__textarea"></textarea>
+        <textarea id="cmp__message" class="cmp__textarea" data-required="true"></textarea>
         <p class="cmp__input-error">This field is required</p>
       </div>
-      <label class="cmp__label" id="cmp__consent-label"><input type="checkbox" id="cmp__consent" class="cmp__checkbox"/>I consent to being contacted by the team<span class="star">*</span></label>
+      <div id="cmp__consent-container" class="cmp__input-container">
+      <input type="checkbox" id="cmp__consent" data-required="To submit this form, please consent to being contacted" class="cmp__checkbox"/><label class="cmp__label" id="cmp__consent-label" for="cmp__consent">I consent to being contacted by the team<span class="star">*</span></label>
+      <p class="cmp__input-error">This field is required</p>
+      </div>
 
       <button type="submit" id="cmp__submit-btn">Submit</button>
     </form>
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
