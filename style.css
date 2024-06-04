@@ -95,6 +95,14 @@ body {
     border-radius: 8px;
 }
 
+.cmp__input-container.invalid .cmp__input, .cmp__input-container.invalid .cmp__textarea {
+    border:solid 1px var(--c-Red);
+}
+
+.cmp__star 
+{
+    color:var (--c-Green-600);
+}
 
 .cmp__input-error {
     position: absolute;
@@ -120,6 +128,13 @@ body {
     background-color: var(--c-Green-600);
     border:none;
     border-radius: 8px;
+    cursor:pointer;
+    transition: filter 300ms;
+}
+
+#cmp__submit-btn:hover 
+{
+    filter:brightness(70%);
 }
 
 .cmp__textarea {
@@ -129,6 +144,7 @@ body {
 #cmp__consent-container {
     display: block;
 }
+
 
 
 /* Padding */
