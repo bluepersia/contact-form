@@ -45,9 +45,167 @@ body {
     font-size: 1.125rem;
 }
 
+.cmp__input-error {
+    color: var(--c-Red);
+}
+
 
 #cmp__submit-btn 
 {
     color: var(--c-White);
 }
 
+.cmp__textarea {
+    font-family: inherit;
+}
+
+
+
+
+/* Layout */
+
+body {
+    background-color: var(--c-Green-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#cmp 
+{
+    background-color: var(--c-White);
+}
+
+#cmp__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cmp__input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cmp__input, .cmp__query-radio-label, .cmp__textarea {
+    border:solid 1px var(--c-Grey-500);
+    border-radius: 8px;
+}
+
+
+.cmp__input-error {
+    position: absolute;
+    bottom: -1em;
+    opacity: 0%;
+    transition: opacity 300ms;
+}
+
+.cmp__input-container.invalid .cmp__input-error {
+    opacity: 100%;
+}
+
+
+
+#cmp__query-radio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#cmp__submit-btn 
+{
+    background-color: var(--c-Green-600);
+    border:none;
+    border-radius: 8px;
+}
+
+.cmp__textarea {
+    min-height: 240px;
+}
+
+/* Padding */
+
+body {
+    padding: 2em 4.2%;
+}
+
+#cmp {
+    padding: 1.5em;
+}
+#cmp__form {
+    gap: 1.5em;
+}
+.cmp__input-container.invalid {
+    padding-bottom: 2em;
+}
+
+.cmp__label {
+    margin-bottom: .5em;
+}
+
+.cmp__input, .cmp__textarea {
+    padding: .75em 1.5em;
+}
+
+.cmp__query-radio-label {
+    padding: .865em 1.5em;
+}
+
+.cmp__query-radio {
+    margin-right: .75em;
+}
+
+#cmp__query-radio-container {
+     gap:1em;
+}
+
+#cmp__submit-btn 
+{
+    padding: .88em;
+}
+
+
+
+@media (min-width:  768px)
+{
+    #cmp__form {
+        display: grid;
+        grid-template-columns: 48.7% 48.7%;
+        column-gap: 2.6%;
+    }
+
+    #cmp__email-container, #cmp__query-container, #cmp__message-container, #cmp__consent-label, #cmp__submit-btn
+    {
+        grid-column: 1 / -1;
+    }
+
+    #cmp__query-radio-container {
+        display: grid;
+        grid-template-columns: 48.7% 48.7%;
+    }
+
+
+    /*Padding*/
+    body {
+        padding: 8em 5.2%;
+    }
+    
+    #cmp {
+        padding: 2.5em;
+    }
+   
+
+    .cmp__query-radio {
+        margin-right: .75em;
+    }
+    
+ 
+    
+}
+
+
+@media (min-width: 1440px)
+{
+    
+}
