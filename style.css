@@ -89,6 +89,7 @@ body {
     position: relative;
 }
 
+
 .cmp__input, .cmp__query-radio-label, .cmp__textarea {
     border:solid 1px var(--c-Grey-500);
     border-radius: 8px;
@@ -100,6 +101,7 @@ body {
     bottom: -1em;
     opacity: 0%;
     transition: opacity 300ms;
+    pointer-events: none;
 }
 
 .cmp__input-container.invalid .cmp__input-error {
@@ -123,6 +125,11 @@ body {
 .cmp__textarea {
     min-height: 240px;
 }
+
+#cmp__consent-container {
+    display: block;
+}
+
 
 /* Padding */
 
@@ -165,6 +172,9 @@ body {
     padding: .88em;
 }
 
+.cmp__checkbox {
+    margin-right: 1em;
+}
 
 
 @media (min-width:  768px)
@@ -175,7 +185,7 @@ body {
         column-gap: 2.6%;
     }
 
-    #cmp__email-container, #cmp__query-container, #cmp__message-container, #cmp__consent-label, #cmp__submit-btn
+    #cmp__email-container, #cmp__query-container, #cmp__message-container, #cmp__consent-container, #cmp__submit-btn
     {
         grid-column: 1 / -1;
     }
@@ -200,12 +210,11 @@ body {
         margin-right: .75em;
     }
     
+    .cmp__checkbox {
+        margin-right: 1.1875em;
+    }
  
     
 }
 
 
-@media (min-width: 1440px)
-{
-    
-}
